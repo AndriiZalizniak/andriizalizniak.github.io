@@ -1,5 +1,6 @@
 import 'core-js/es/object/values.js';
 import ACCORDEON from './plugs/Accordion';
+import DARK_MODE from './partials/_dark-mode';
 
 const INIT_ACC = () => {
   if (window.innerWidth <= 576 && document.querySelector('.js-accord__wrap')) {
@@ -17,3 +18,4 @@ const INIT_ACC = () => {
 };
 
 INIT_ACC();
+DARK_MODE();

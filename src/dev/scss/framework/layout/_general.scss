@@ -8,7 +8,7 @@ body {
 
   @extend %az-dark-mode-transition-bg-color;
 
-  &.za-dark-mode {
+  &.js-dark-mode {
     background-color: $text;
 
     * {
