@@ -1,0 +1,31 @@
+@import '../scss-variables.scss';
+@import '../../general/mixins.scss';
+
+body {
+  min-width: $extratiny;
+  color: $text;
+  background-color: $white;
+
+  @extend %az-dark-mode-transition-bg-color;
+
+  &.za-dark-mode {
+    background-color: $text;
+
+    * {
+      color: $white;
+    }
+  }
+}
+
+body,
+html {
+  &.js-no-scroll {
+    overflow: hidden;
+  }
+
+  @include scroll-bar(8px, $green);
+}
+
+a {
+  color: currentColor;
+}

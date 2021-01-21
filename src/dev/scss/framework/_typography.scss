@@ -1,0 +1,171 @@
+@import './scss-variables';
+@import '../general/mixins.scss';
+
+html,
+button,
+input,
+textarea {
+  font-family: 'Josefin';
+  font-weight: 700;
+}
+
+.az-h1 {
+  line-height: 1.1em;
+  font-weight: 700;
+
+  @include media(">large") {
+    font-size: 40px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 30px;
+  }
+
+  @include media("<=tiny") {
+    font-size: 24px;
+  }
+}
+
+.az-h2 {
+  line-height: 1.2em;
+  font-weight: 700;
+  
+  @include media(">large") {
+    font-size: 36px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 26px;
+  }
+
+  @include media("<=tiny") {
+    font-size: 22px;
+  }
+}
+
+.az-h3 {
+  line-height: 1.2em;
+  font-weight: 700;
+
+  @include media(">medium") {
+    font-size: 24px;
+  }
+
+  @include media("<=medium") {
+    font-size: 15px;
+  }
+}
+
+.az-h4 {
+  line-height: 1.2em;
+  font-weight: 400;
+
+  @include media(">large") {
+    font-size: 22px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 18px;
+  }
+
+  @include media("<=tiny") {
+    font-size: 16px;
+  }
+}
+
+.az-h5 {
+  line-height: 1.2em;
+  font-weight: 700;
+
+  @include media(">large") {
+    font-size: 20px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 16px;
+  }
+
+  @include media("<=tiny") {
+    font-size: 15px;
+  }
+}
+
+// .az-h6 {}
+
+.az-lead {
+  font-weight: 400;
+  line-height: 1.35em;
+
+  @include media(">large") {
+    font-size: 18px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 16px;
+  }
+
+  @include media("<=tiny") {
+    font-size: 15px;
+  }
+}
+
+.az-lead-2 {
+  font-weight: 400;
+  line-height: 1.3em;
+
+  @include media(">large") {
+    font-size: 30px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 24px;
+  }
+
+  @include media("<=tiny") {
+    font-size: 18px;
+  }
+}
+
+.az-reg,
+  %az-reg {
+  line-height: 1.37em;
+  font-weight: 400;
+
+  @include media(">medium") {
+    font-size: 16px;
+  }
+
+  @include media("<=medium") {
+    font-size: 14px;
+  }
+}
+
+// .az-small {
+//   line-height: 1.39em;
+//   font-weight: 400;
+
+//   @include media(">tiny") {
+//     font-size: 16px;
+//   }
+
+//   @include media("<=tiny") {
+//     font-size: 12px;
+//   }
+// }
+
+.az-txt-upper {
+  text-transform: uppercase;
+}
+
+// Colors
+.az-white {
+  color: $white;
+}
+
+.az-text {
+  color: $text;
+}
+
+.az-green {
+  color: $green;
+}

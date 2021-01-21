@@ -1,0 +1,7 @@
+{% macro icon(name = "") %}
+
+  <svg class="az-icon az-icon-{{name}}">
+    <use xlink:href="#{{name}}" width="100%" height="100%"/>
+  </svg>
+
+{% endmacro %}

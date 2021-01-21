@@ -1,0 +1,15 @@
+@import './general/reset';
+@import './framework/fonts';
+@import './framework/scss-variables';
+@import './framework/css-variables';
+@import './general/mixins.scss';
+@import './general/extends';
+@import './framework/typography';
+
+@import './framework/layout/general';
+@import './framework/layout/common';
+@import './framework/layout/header';
+@import './framework/layout/footer';
+
+@import './framework/ui/icons';
+@import './framework/ui/btns';

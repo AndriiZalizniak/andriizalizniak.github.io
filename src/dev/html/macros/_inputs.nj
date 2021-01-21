@@ -1,0 +1,19 @@
+{% import "./_svg-icons.nj" as svg %}
+
+{% macro inputTxt(type = "", placeholder = "", class = "", id = "", name = "") %}
+  <input type="{{type}}" placeholder="{{placeholder}}"
+        {% if class %}
+        class="az-input-txt {{ class }}"
+        {% else %}
+        class="az-input-txt"
+        {% endif %}
+
+        {% if id %}
+        id="{{id}}"
+        {% endif %}
+
+        {% if name %}
+        name="{{name}}"
+        {% endif %}
+        >
+{% endmacro %}
