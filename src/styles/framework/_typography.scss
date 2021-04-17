@@ -56,7 +56,6 @@ textarea {
   @include fluid-type($tiny, $full, 18px, 24px);
 }
 
-p,
 .az-reg,
   %az-reg {
   line-height: 1.37em;
@@ -87,6 +86,7 @@ p,
 
 .az-link {
   color: $link;
+
   @include transition(opacity, 0.2, 0, linear);
 
   &:hover {
@@ -105,4 +105,8 @@ p,
 
 .az-green {
   color: $green;
+}
+
+.az-grey {
+  color: $grey;
 }

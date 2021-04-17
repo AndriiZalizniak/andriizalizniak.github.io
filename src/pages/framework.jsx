@@ -173,6 +173,17 @@ const Framework = () => {
 
                   <div className={'az-framework-block'}>
                     <hr/>
+                    <p className={'az-reg'}>Text colors</p>
+                    <hr/>
+                    <p className={'az-white'} style={{background: '#ccc'}}>.az-white</p>
+                    <p className={'az-text'}>.az-text</p>
+                    <p className={'az-green'}>.az-green</p>
+                    <p className={'az-grey'}>.az-grey</p>
+                    
+                  </div>
+
+                  <div className={'az-framework-block'}>
+                    <hr/>
                       <p className={'az-reg'}>Transitions mode</p>
                     <hr/>
                     <ul className="ct-lead az-framework-transitions">

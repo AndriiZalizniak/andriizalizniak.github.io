@@ -11,7 +11,8 @@ module.exports = {
       resolve: 'gatsby-plugin-root-import',
       options: {
         '@': path.join(__dirname, 'src'),
-        assets: path.join(__dirname, 'src/assets')
+        assets: path.join(__dirname, 'src/assets'),
+        styles: path.join(__dirname, 'src/styles')
       }
     }
   ],
