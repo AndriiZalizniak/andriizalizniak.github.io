@@ -1,0 +1,32 @@
+// @import '../../general/mixins.scss';
+// @import '../scss-variables.scss';
+
+.az-btn {
+  padding: 24px;
+  display: inline-block;
+  border-radius: 4px;
+  line-height: 1;
+  font-weight: 700;
+  color: $white;
+  text-align: center;
+  background-color: $green;
+  overflow: hidden;
+  @include transition(opacity, .2, 0, linear);
+
+  @include media(">large") {
+    font-size: 24px;
+  }
+
+  @include media(">tiny", "<=large") {
+    font-size: 20px;
+  }
+
+  @include media("<=tiny") {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}

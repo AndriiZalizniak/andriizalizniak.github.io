@@ -14,9 +14,13 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fontsource/josefin-sans": "^4.2.2",
     "gatsby": "^3.2.1",
+    "gatsby-plugin-root-import": "^2.0.6",
+    "gatsby-plugin-sass": "^4.3.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.10"
   },
   "devDependencies": {
     "prettier": "2.2.1"

@@ -1,0 +1,56 @@
+.az-framework {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.az-framework-gap {
+  margin-top: 40px;
+}
+
+.az-framework-block {
+  margin-bottom: 50px;
+}
+
+.az-framework-colors {
+  li {
+    margin: 12px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  span {
+    margin-right: 16px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid;
+    box-shadow: 0 0 10px #cccccc;
+  }
+}
+
+.az-framework-sizes {
+  li {
+    margin: 16px 0;
+  }
+}
+
+.az-framework-transitions {
+  li {
+    cursor: pointer;
+
+    &:hover {
+      i {
+        transform: translateX(100px);
+      }
+    }
+    
+    i {
+      position: absolute;
+      transition-delay: 0s;
+      transition-duration: 1s;
+      transition-property: all;
+    }
+    
+  }
+}

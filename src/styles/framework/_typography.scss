@@ -1,0 +1,108 @@
+html,
+button,
+input,
+textarea {
+  font-family: 'Josefin Sans';
+}
+
+.az-h1 {
+  line-height: 1.1em;
+  font-weight: 700;
+
+  @include fluid-type($tiny, $full, 28px, 42px);
+}
+
+.az-h2 {
+  line-height: 1.2em;
+  font-weight: 700;
+  
+  @include fluid-type($tiny, $full, 24px, 36px);
+}
+
+.az-h3 {
+  line-height: 1.2em;
+  font-weight: 700;
+
+  @include fluid-type($tiny, $full, 20px, 24px);
+}
+
+.az-h4 {
+  line-height: 1.2em;
+  font-weight: 400;
+
+  @include fluid-type($tiny, $full, 18px, 22px);
+}
+
+.az-h5 {
+  line-height: 1.2em;
+  font-weight: 400;
+
+  @include fluid-type($tiny, $full, 16px, 20px);
+}
+
+// .az-h6 {}
+
+.az-lead {
+  font-weight: 400;
+  line-height: 1.35em;
+
+  @include fluid-type($tiny, $full, 15px, 18px);
+}
+
+.az-lead-2 {
+  font-weight: 400;
+  line-height: 1.3em;
+
+  @include fluid-type($tiny, $full, 18px, 24px);
+}
+
+p,
+.az-reg,
+  %az-reg {
+  line-height: 1.37em;
+  font-weight: 400;
+
+  @include fluid-type($tiny, $full, 14px, 16px);
+}
+
+.az-small {
+  line-height: 1.39em;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+
+// Others
+.az-txt-up {
+  text-transform: uppercase;
+}
+
+.az-txt-center {
+  text-align: center;
+}
+
+.az-txt-thin {
+  font-weight: 200;
+}
+
+.az-link {
+  color: $link;
+  @include transition(opacity, 0.2, 0, linear);
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+// Colors
+.az-white {
+  color: $white;
+}
+
+.az-text {
+  color: $text;
+}
+
+.az-green {
+  color: $green;
+}
