@@ -2,16 +2,29 @@
 @import 'styles/vars/_scss-variables.scss';
 
 .header {
+  margin-bottom: $gap-mob;
   padding-top: $gap-mob;
   padding-bottom: $gap-mob;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  // background-color: $white;
 
-  
+  // &:not() {}
+
+  // @include transition(box-shadow, .4, 0, $tr-mode-1);
+
   .js-header-name {
     .is-hidden {
       opacity: 0;
       pointer-events: none;
     }
   }
+}
+
+.scrolling {
+  box-shadow: 0 0 16px 0 $text;
 }
 
 .inner {
@@ -75,10 +88,10 @@
   &__item {
     position: absolute;
     margin: auto;
-    animation-duration: .8s;
-    animation-delay: .4s;
-    animation-fill-mode: forwards;
-    animation-timing-function: $tr-mode-1;
+    // animation-duration: .8s;
+    // animation-delay: .4s;
+    // animation-fill-mode: forwards;
+    // animation-timing-function: $tr-mode-1;
     // top: 50%;
     // left: 50%;
     // transform: translate3d(-50%, -50%, 0);

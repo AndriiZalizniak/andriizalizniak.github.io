@@ -5,16 +5,6 @@ body {
   min-width: $extratiny;
   color: $text;
   background-color: $white;
-
-  @extend %az-dark-mode-transition-bg-color;
-
-  &.js-dark-mode {
-    background-color: $text;
-
-    * {
-      color: $white;
-    }
-  }
 }
 
 body,
@@ -23,10 +13,28 @@ html {
     overflow: hidden;
   }
 
-  @include scroll-bar(8px, $green);
+  @include scroll-bar(8px, $text);
+}
+
+main {
+  @include media(">large") {
+    padding-top: calc(#{$header-h-desk} + #{$gap-mob} * 3);
+  }
+
+  @include media(">tiny", "<=large") {
+    padding-top: calc(#{$header-h-tabl} + #{$gap-mob} * 3);
+  }
+
+  @include media("<=tiny") {
+    padding-top: calc(#{$header-h-mob} + #{$gap-mob} * 3);
+  }
 }
 
 a {
   color: currentColor;
   font: inherit;
+}
+
+.az-page-wrapper {
+  min-height: 150vh;
 }

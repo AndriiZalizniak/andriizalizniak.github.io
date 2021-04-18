@@ -1,0 +1,20 @@
+.az-icon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.az-icon-youtube,
+.az-icon-github,
+.az-icon-vk,
+.az-icon-visit,
+.az-icon-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.az-icon-vk {
+  border: 2px solid currentColor;
+  border-radius: 25%;
+}

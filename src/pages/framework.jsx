@@ -14,6 +14,10 @@ const Framework = () => {
       color: '#000000'
     },
     {
+      var: 'dark',
+      color: '#020A12'
+    },
+    {
       var: 'green',
       color: '#6FBE49'
     },

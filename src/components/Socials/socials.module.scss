@@ -1,0 +1,30 @@
+@import 'styles/general/mixins.scss';
+@import 'styles/vars/_scss-variables.scss';
+
+.container {
+  position: fixed;
+  bottom: $gap-mob;
+  right: $gap-mob;
+  color: $dark;
+}
+
+.inner {
+
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &>li:not(:last-of-type) {
+    margin-right: 16px;
+  }
+}
+
+.socialsIsShow {
+  color: red;
+  .inner {}
+
+  .list {}
+}

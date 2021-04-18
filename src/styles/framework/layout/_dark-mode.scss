@@ -1,0 +1,15 @@
+.az-page-wrapper {
+  transition: background-color .3s 0s $tr-mode-1;
+
+  &.az-dark-mode {
+    background-color: $dark;
+
+    * {
+      color: $light;
+    }
+
+    header {
+      box-shadow: 0 0 16px 0 $light;
+    }
+  }
+}
