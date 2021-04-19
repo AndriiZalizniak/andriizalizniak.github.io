@@ -1,28 +1,30 @@
-import React, { useState } from 'react';
-import classnames from 'classnames';
-import Header from './Header';
-import Footer from './Footer';
-import DarkModeBtn from '@/components/ui/DarkModeBtn';
-import '@/styles/styles.scss';
+import React, { useState, useContext, useCallback } from "react";
+import classnames from "classnames";
+import { themes, ThemeContext } from "@/store/ThemeProvider";
 
-const Layout = ({children, pageClass}) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+import Header from "./Header";
+import Footer from "./Footer";
+import DarkModeBtn from "@/components/ui/DarkModeBtn";
+import "@/styles/styles.scss";
 
-  const setMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+const Layout = ({ children, pageClass }) => {
+  const store = useContext(ThemeContext);
+
+  const setMode = useCallback(() => {
+    store.setCurrentTheme();
+  }, []);
 
   return (
-<>
-      <div className={classnames(pageClass, isDarkMode && 'az-dark-mode', 'az-page-wrapper ')}>
-        <Header />
-        <main>
-          <DarkModeBtn onChange={ setMode } />
-          { children() }
-        </main>
-        <Footer />
-      </div>
-</>
+    <div
+      className={classnames(pageClass, store.currentTheme, "az-page-wrapper")}
+    >
+      <Header />
+      <main>
+        <DarkModeBtn onChange={setMode} />
+        {children()}
+      </main>
+      <Footer />
+    </div>
   );
 };
 

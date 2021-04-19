@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classnames from 'classnames';
 import SocialBtn from '@/components/ui/SocialBtn';
 import Btn from '@/components/ui/Btn';
+import HoverStickyElement from '@/components/ui/HoverStickyElement';
 import URL from '@/mocks/urls.js';
 import * as styles from './socials.module.scss';
 
@@ -32,7 +33,7 @@ const Socials = () => {
   };
 
   return (
-    <div className={classnames(styles.container, !isSocials && styles.socialsIsShow)}>
+    <div className={classnames(styles.container, isSocials && styles.socialsIsShow)}>
       <div className={classnames(styles.inner)}>
         <ul className={classnames(styles.list)}>
           {
@@ -49,7 +50,14 @@ const Socials = () => {
           }
         </ul>
 
-        <Btn text={'text'} svg={'visit'} onChange={ showSocials } />
+          <HoverStickyElement>
+            {
+              commonData => 
+                <>
+                  <Btn svg={'visit'} onChange={ showSocials } className={styles.btnToShowSocials} />
+                </>
+            }
+          </HoverStickyElement>
       </div>
     </div>
   );
