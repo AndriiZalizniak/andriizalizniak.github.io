@@ -1,12 +1,9 @@
 import React, { useCallback, useRef } from "react";
 import classnames from "classnames";
-// import gsap from 'gsap';
 import { TweenMax } from "gsap/all";
-import * as styles from "./hoverStickyElement.module.scss";
+import "./hoverStickyElement.scss";
 
-const HoverStickyElement = ({ children }) => {
-  // const { tl } = useTweenMax();
-
+const HoverStickyElement = ({ children, className }) => {
   const container = useRef(null);
   const inner = useRef(null);
   const element = useRef(null);
@@ -23,7 +20,7 @@ const HoverStickyElement = ({ children }) => {
       TweenMax.to(outerWrap, 0.3, {
         x: ((s - i.offsetWidth / 2) / i.offsetWidth) * 4,
         y: ((o - i.offsetHeight / 2) / i.offsetHeight) * 4,
-        scale: 1.2,
+        scale: 1.4,
         ease: "Power2.easeOut",
       });
 
@@ -63,13 +60,13 @@ const HoverStickyElement = ({ children }) => {
 
   return (
     <div
-      className={classnames(styles.stickyContainer, "az-sticky-container")}
+      className={classnames("az-sticky-container", className)}
       ref={container}
       onMouseMove={onHover}
       onMouseLeave={onLeave}
     >
-      <div className={classnames(styles.stickyInner)} ref={inner}>
-        <div className={classnames(styles.stickyElement)} ref={element}>
+      <div className={classnames("az-sticky-inner")} ref={inner}>
+        <div className={classnames("az-sticky-element")} ref={element}>
           {children()}
         </div>
       </div>

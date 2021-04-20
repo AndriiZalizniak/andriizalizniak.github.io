@@ -1,6 +1,8 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
 import { DARK_THEME, LIGHT_THEME } from "@/constants/themes";
 
+import SetValues from "@/helpers/setCssVars";
+
 export const themes = {
   default: LIGHT_THEME,
   dark: DARK_THEME,
@@ -16,6 +18,10 @@ const ThemeProvider = ({ children }) => {
       prevState === themes.dark ? themes.default : themes.dark
     );
   }, []);
+
+  useEffect(() => {
+    SetValues(currentTheme);
+  }, [currentTheme]);
 
   return (
     <ThemeContext.Provider

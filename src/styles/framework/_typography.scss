@@ -2,7 +2,7 @@ html,
 button,
 input,
 textarea {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
 }
 
 .az-h1 {
@@ -15,7 +15,7 @@ textarea {
 .az-h2 {
   line-height: 1.2em;
   font-weight: 700;
-  
+
   @include fluid-type($tiny, $full, 24px, 36px);
 }
 
@@ -57,7 +57,7 @@ textarea {
 }
 
 .az-reg,
-  %az-reg {
+%az-reg {
   line-height: 1.37em;
   font-weight: 400;
 
@@ -69,7 +69,6 @@ textarea {
   font-weight: 200;
   font-size: 12px;
 }
-
 
 // Others
 .az-txt-up {
@@ -90,7 +89,7 @@ textarea {
   @include transition(opacity, 0.2, 0, linear);
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
@@ -101,6 +100,7 @@ textarea {
 
 .az-text {
   color: $text;
+  color: var(--TEXT_COLOR);
 }
 
 .az-green {

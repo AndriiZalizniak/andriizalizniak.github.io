@@ -1,18 +1,17 @@
 // general
-@import './general/reset';
+@import "./general/reset";
 // vars
-@import './vars/scss-variables';
-@import './vars/css-variables';
-@import './general/mixins.scss';
-@import './general/extends';
-
+@import "./vars/scss-variables";
+@import "./vars/theme";
+@import "./vars/css-variables";
+@import "./general/mixins.scss";
+@import "./general/extends";
 
 // framework
-@import './framework/fonts';
-@import './framework/typography';
-@import './framework/general';
-@import './framework/common';
-@import './framework/layout/dark-mode';
-@import './framework/ui/btns';
-@import './framework/ui/icons';
-@import './framework/ui/inputs';
+@import "./framework/fonts";
+@import "./framework/typography";
+@import "./framework/general";
+@import "./framework/common";
+@import "./framework/ui/btns";
+@import "./framework/ui/icons";
+@import "./framework/ui/inputs";

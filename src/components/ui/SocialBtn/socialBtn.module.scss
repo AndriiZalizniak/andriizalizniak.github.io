@@ -1,3 +1,12 @@
+@import "styles/general/mixins.scss";
+@import "styles/vars/_scss-variables.scss";
+
 .socialBtn {
-  position: relative;
+  padding: 8px;
+  display: inline-block;
+  color: var(--TEXT_COLOR);
+
+  * {
+    pointer-events: none;
+  }
 }

@@ -1,5 +1,5 @@
-@import '../../general/mixins.scss';
-@import '../../vars/scss-variables';
+@import "../../general/mixins.scss";
+@import "../../vars/scss-variables";
 
 .az-input {
   padding-left: 22px;
@@ -10,8 +10,9 @@
   width: 100%;
   font-weight: 400;
   color: $text;
+  color: var(--TEXT_COLOR);
   border: 1px solid $bg-grey;
-  transition: border-color .2s linear, background .2s linear;
+  transition: border-color 0.2s linear, background 0.2s linear;
 
   @include media(">tiny") {
     font-size: 18px;
@@ -27,15 +28,18 @@
 
   @include placeholder {
     color: $text;
+    color: var(--TEXT_COLOR);
   }
 
   &:focus {
-    background-color: rgba($bg-grey, .3);
+    background-color: rgba($bg-grey, 0.3);
     border-color: $text;
+    border-color: var(--TEXT_COLOR);
   }
 
   &:hover {
-    background-color: rgba($bg-grey, .3);
+    background-color: rgba($bg-grey, 0.3);
     border-color: $text;
+    border-color: var(--TEXT_COLOR);
   }
 }

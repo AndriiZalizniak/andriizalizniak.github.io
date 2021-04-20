@@ -30,3 +30,16 @@
     display: none !important;
   }
 }
+
+.az-page-wrapper {
+  // min-height: 150vh;
+  // width: 200vw;
+  height: 100vh;
+  width: 100vw;
+  color: var(--TEXT_COLOR);
+  background-color: var(--BACKGROUND_COLOR);
+}
+
+.az-general-transition {
+  transition: background-color 0.3s 0s $tr-mode-default;
+}

@@ -1,48 +1,61 @@
 // Media queries breakpoints
-$extratiny:       320px;
-$mediumtiny:      375px;
-$tiny:            576px;
-$small:           768px;
-$medium:          992px;
-$large:           1200px;
-$extralarge:      1600px;
-$full:            1920px;
-$wide:            2560px;
+$extratiny: 320px;
+$mediumtiny: 375px;
+$tiny: 576px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+$extralarge: 1600px;
+$full: 1920px;
+$wide: 2560px;
 
 // Colors
-$white:           #FFFFFF;
-$black:           #000000;
-$dark:            #020A12;
-$light:           #929eab;
-$green:           #6FBE49;
-$green-light:     #EDFFE2;
-$text:            #2B3641;
-$grey:            #CECECE;
-$bg-grey:         #EAEAEA;
-$border:          #E0E0E0;
-$link:            #2D9CDB;
-$transp:          rgba(255, 255, 255, 0);
+$white: #ffffff;
+$black: #000000;
+// $dark: #020a12;
+// $light: #929eab;
+$dark-blue: #092440;
+$light-blue: #223d5a;
+$green: #6fbe49;
+$green-light: #edffe2;
+$text: #2b3641;
+$grey: #cecece;
+$bg-grey: #eaeaea;
+$border: #e0e0e0;
+$link: #2d9cdb;
+$transp: rgba(255, 255, 255, 0);
 
 // Sizes
-$wrap:            1438px;
+$wrap: 1438px;
 
-$gap-desk:        146px;
-$gap-tabl:        40px;
-$gap-mob:         16px;
+$gap-desk: 146px;
+$gap-tabl: 40px;
+$gap-mob: 16px;
 
-$halfGap-desk:    calc($gap-desk / 2);
-$halfGap-tabl:    calc($gap-tabl / 2);
-$halfGap-mob:     calc($gap-mob / 2);
+$halfGap-desk: calc($gap-desk / 2);
+$halfGap-tabl: calc($gap-tabl / 2);
+$halfGap-mob: calc($gap-mob / 2);
 
-$header-h-desk:   72px;
-$header-h-tabl:   58px;
-$header-h-mob:    50px;
+$header-h-desk: 72px;
+$header-h-tabl: 58px;
+$header-h-mob: 50px;
 
 // Pathes
-$pathToImg:       '../static/images/';
+$pathToImg: "../static/images/";
 
 // Transitions mode
-$tr-mode-1: cubic-bezier(0.65, 0, 0.35, 1);
+$tr-mode-default: cubic-bezier(0.65, 0, 0.35, 1);
+$tr-mode-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 // settings of "include-media"
-$breakpoints: (extratiny: $extratiny, mediumtiny: $mediumtiny, tiny: $tiny, small: $small, medium: $medium, large: $large, extralarge: $extralarge, full: $full, wide: $wide);
+$breakpoints: (
+  extratiny: $extratiny,
+  mediumtiny: $mediumtiny,
+  tiny: $tiny,
+  small: $small,
+  medium: $medium,
+  large: $large,
+  extralarge: $extralarge,
+  full: $full,
+  wide: $wide,
+);

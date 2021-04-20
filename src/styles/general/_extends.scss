@@ -1,9 +1,9 @@
 .az-dark-mode-transition,
 %az-dark-mode-transition {
-  @include transition(all, .6, 0, $tr-mode-1);
+  @include transition(all, 0.6, 0, $tr-mode-default);
 }
 
 .az-dark-mode-transition-txt-color,
 %az-dark-mode-transition-txt-color {
-  @include transition(a, .6, 0, $tr-mode-1);
+  @include transition(a, 0.6, 0, $tr-mode-default);
 }

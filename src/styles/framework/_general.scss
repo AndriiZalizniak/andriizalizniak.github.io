@@ -5,18 +5,17 @@ body {
   min-width: $extratiny;
   color: $text;
   background-color: $white;
+  // overflow-y: hidden;
 }
 
 body,
 html {
-  &.js-no-scroll {
-    overflow: hidden;
-  }
-
-  @include scroll-bar(8px, $text);
+  // @include scroll-bar(8px, $text);
 }
 
 main {
+  width: 300vw;
+
   @include media(">large") {
     padding-top: calc(#{$header-h-desk} + #{$gap-mob} * 3);
   }
@@ -33,8 +32,4 @@ main {
 a {
   color: currentColor;
   font: inherit;
-}
-
-.az-page-wrapper {
-  min-height: 150vh;
 }

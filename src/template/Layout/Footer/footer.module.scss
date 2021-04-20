@@ -1,8 +1,8 @@
-@import 'styles/general/mixins.scss';
-@import 'styles/vars/_scss-variables.scss';
+@import "styles/general/mixins.scss";
+@import "styles/vars/_scss-variables.scss";
 
 .footer {
-  position: fixed;
+  display: block;
 }
 
 .inner {
