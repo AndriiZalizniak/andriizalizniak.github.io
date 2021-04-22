@@ -38,9 +38,9 @@ const HoverStickyElement = ({ children, className }) => {
       const outerWrap = inner.current;
       const elemWrap = element.current;
 
-      const i = outerWrap,
-        s = e.clientX - i.getBoundingClientRect().left,
-        o = e.clientY - i.getBoundingClientRect().top;
+      // const i = outerWrap,
+      // s = e.clientX - i.getBoundingClientRect().left,
+      // o = e.clientY - i.getBoundingClientRect().top;
 
       TweenMax.to(outerWrap, 0.3, {
         x: 0,
@@ -64,6 +64,8 @@ const HoverStickyElement = ({ children, className }) => {
       ref={container}
       onMouseMove={onHover}
       onMouseLeave={onLeave}
+      role={"button"}
+      tabIndex={-1}
     >
       <div className={classnames("az-sticky-inner")} ref={inner}>
         <div className={classnames("az-sticky-element")} ref={element}>

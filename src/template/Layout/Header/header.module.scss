@@ -13,9 +13,6 @@
   background-color: var(--BACKGROUND_COLOR);
 }
 
-.scrolling {
-}
-
 .inner {
   position: relative;
 
@@ -74,8 +71,7 @@
   }
 
   &__item {
-    // position: absolute;
-    // margin: auto;
+    color: currentColor;
   }
 }
 

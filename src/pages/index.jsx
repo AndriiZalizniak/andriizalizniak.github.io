@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import ThemeProvider from "@/store/ThemeProvider";
 import Layout from "@/template/Layout";
 import PageConfig from "@/mocks/pageConfig";

@@ -76,7 +76,12 @@ const Socials = () => {
           })}
         </ul>
 
-        <div className={"az-btnToShowSocials-wrap"} onMouseLeave={onBounceBtn}>
+        <div
+          className={"az-btnToShowSocials-wrap"}
+          onMouseLeave={onBounceBtn}
+          role={"button"}
+          tabIndex={-2}
+        >
           <animated.div
             style={{
               scale: btnBounce.to({

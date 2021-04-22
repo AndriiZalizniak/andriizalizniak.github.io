@@ -4,13 +4,7 @@ import * as styles from "./header.module.scss";
 
 const Header = () => {
   return (
-    <header
-      className={classnames(
-        styles.header,
-        styles.scrolling,
-        "az-general-transition"
-      )}
-    >
+    <header className={classnames(styles.header, "az-general-transition")}>
       <div className={classnames(styles.inner, "az-wrap js-header-name")}>
         <div className={styles.name}>
           <p
