@@ -17,6 +17,7 @@
     "@fontsource/josefin-sans": "^4.2.2",
     "classnames": "^2.3.1",
     "gatsby": "^3.2.1",
+    "gatsby-cli": "^3.3.0",
     "gatsby-plugin-root-import": "^2.0.6",
     "gatsby-plugin-sass": "^4.3.0",
     "gsap": "^3.6.1",

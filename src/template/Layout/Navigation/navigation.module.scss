@@ -1,0 +1,28 @@
+@import "styles/general/mixins.scss";
+@import "styles/vars/_scss-variables.scss";
+
+.nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.link {
+}
+
+.linkActive {
+  color: red;
+}

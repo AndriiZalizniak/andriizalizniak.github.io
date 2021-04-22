@@ -9,8 +9,10 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
+
   color: var(--TEXT_COLOR);
-  background-color: var(--BACKGROUND_COLOR);
+  // background-color: var(--BACKGROUND_COLOR);
 }
 
 .inner {
@@ -26,6 +28,20 @@
 
   @include media("<=tiny") {
     height: $header-h-mob;
+  }
+}
+
+.wrapper {
+  @include media(">large") {
+    padding: 0 $gap-desk;
+  }
+
+  @include media(">tiny", "<=large") {
+    padding: 0 $gap-tabl;
+  }
+
+  @include media("<=tiny") {
+    padding: 0 $gap-mob;
   }
 }
 
