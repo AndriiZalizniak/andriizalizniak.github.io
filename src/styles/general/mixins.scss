@@ -88,15 +88,15 @@
 
 @mixin scroll-bar($width, $color-track) {
   &::-webkit-scrollbar {
-    border-radius: $width / 2.5;
+    border-radius: calc($width / 2.5);
     width: $width;
   }
   &::-webkit-scrollbar-track {
-    border-radius: $width / 2.5;
+    border-radius: calc($width / 2.5);
     background-color: lighten($color-track, 30%);
   }
   &::-webkit-scrollbar-thumb {
-    border-radius: $width / 2.5;
+    border-radius: calc($width / 2.5);
     background-color: $color-track;
   }
 }
@@ -117,9 +117,9 @@
   width: auto;
 }
 
-@function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
-}
+// @function strip-unit($value) {
+//   @return calc($value / ($value * 0 + 1));
+// }
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
   $u1: unit($min-vw);
