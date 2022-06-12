@@ -25,7 +25,7 @@ const Header = () => {
                 to={URL.home}
                 className={classnames(styles.short, styles.link)}
               >
-                {/* <span > */}a<span>.</span>z{/* </span> */}
+                <span>Page slogan</span>
               </Link>
             </p>
           </div>

@@ -1,0 +1,33 @@
+@import "@/styles/general/index.scss";
+
+.section {
+  width: 200vw !important;
+  height: 100vh !important;
+  background-image: linear-gradient(to right, #000, #f00);
+}
+
+.title {
+}
+
+.circlesWrap {
+  padding: 0 15vw;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  background-color: cadetblue;
+}
+
+.circle {
+  margin: 0 50px;
+  display: block;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: coral;
+  overflow: hidden;
+}
+
+.wrapContainer {
+  margin-top: 200px;
+  // text-align: right;
+}

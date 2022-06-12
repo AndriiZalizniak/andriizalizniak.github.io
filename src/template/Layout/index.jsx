@@ -17,17 +17,14 @@ const Layout = ({ children, pageClass }) => {
   return (
     <div
       className={classnames(pageClass, "az-page-wrapper az-general-transition")}
-      onWheel={(e) => console.log(e.pageX, e.clientX, e.screenX, e)}
+      // onWheel={(e) => console.log(e.pageX, e.clientX, e.screenX, e)}
     >
       <Header />
       <HorizontalScroll
         reverseScroll={true}
         config={{ stiffness: 50, damping: 30 }}
       >
-        <main>
-          <p className={"az-h1 az-txt-up az-txt-center"}>
-            <span>andrii.zalizniak</span>
-          </p>
+        <main style={{ display: "flex" }}>
           <DarkModeBtn onChange={setMode} />
           {children()}
         </main>

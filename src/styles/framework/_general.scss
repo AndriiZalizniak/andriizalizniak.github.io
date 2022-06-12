@@ -10,7 +10,7 @@ body {
 
 body,
 html {
-  // @include scroll-bar(8px, $text);
+  @include scroll-bar(0px, $text);
 }
 
 main {

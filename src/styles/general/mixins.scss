@@ -1,4 +1,4 @@
-@import './include-media';
+@import "./include-media";
 
 @mixin height-to-max($media) {
   @media only screen and (max-height: $media) {
@@ -54,35 +54,35 @@
 
   &::-webkit-input-placeholder {
     opacity: 1;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &::-moz-placeholder {
     opacity: 1;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &:-moz-placeholder {
     opacity: 1;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &:-ms-input-placeholder {
     opacity: 1;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &:focus::-webkit-input-placeholder {
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &:focus::-moz-placeholder {
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &:focus:-moz-placeholder {
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
   &:focus:-ms-input-placeholder {
     opacity: 0;
-    transition: opacity .3s ease;
+    transition: opacity 0.3s ease;
   }
 }
 
@@ -93,7 +93,7 @@
   }
   &::-webkit-scrollbar-track {
     border-radius: $width / 2.5;
-    background-color:  lighten($color-track, 30%);
+    background-color: lighten($color-track, 30%);
   }
   &::-webkit-scrollbar-thumb {
     border-radius: $width / 2.5;
@@ -103,7 +103,7 @@
 
 @mixin lhCrop($line-height) {
   &::before {
-    content: '';
+    content: "";
     display: block;
     height: 0;
     width: 0;
@@ -133,7 +133,10 @@
         font-size: $min-font-size;
       }
       @media screen and (max-width: $max-vw - 1) and (min-width: $min-vw + 1) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
       }
       @media screen and (min-width: $max-vw) {
         font-size: $max-font-size;
@@ -144,10 +147,10 @@
 
 @mixin transition($property, $duration, $delay, $t-function) {
   transition-property: $property;
-  transition-duration: $duration+s;
+  transition-duration: $duration + s;
 
   @if $delay {
-    transition-delay: $delay+s;
+    transition-delay: $delay + s;
   }
 
   @if $t-function {

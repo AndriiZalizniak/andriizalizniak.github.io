@@ -1,7 +1,17 @@
 import React from "react";
 
+import Hero from "@/template/Pages/About/Hero";
+import Subhero from "@/template/Pages/About/Subhero";
+import Solution from "@/template/Pages/About/Solution";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div style={{ overflow: "hidden" }}>
+      <Hero />
+      <Solution />
+      <Subhero />
+    </div>
+  );
 };
 
 export default About;
