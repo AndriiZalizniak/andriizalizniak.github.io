@@ -1,6 +1,6 @@
 import URL from './urls';
 
-const NavigationItems = [{
+const headerNav = [{
     title: 'Video',
     href: URL.video
   },
@@ -14,4 +14,4 @@ const NavigationItems = [{
   }
 ];
 
-export default NavigationItems;
+export default headerNav;

@@ -1,9 +1,9 @@
-import React from "react";
-import classnames from "classnames";
-import { Link } from "gatsby";
-import Navigation from "@/template/Layout/Navigation";
-import URL from "@/mocks/urls";
-import * as styles from "./header.module.scss";
+import React from "react"
+import classnames from "classnames"
+import { Link } from "gatsby"
+import HeaderNavigation from "@/template/Layout/HeaderNavigation"
+import URL from "@/mocks/urls"
+import * as styles from "./header.module.scss"
 
 const Header = () => {
   return (
@@ -30,11 +30,11 @@ const Header = () => {
             </p>
           </div>
 
-          <Navigation className={"nav-----"} />
+          <HeaderNavigation className={"nav-----"} />
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
