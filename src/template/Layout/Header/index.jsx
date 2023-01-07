@@ -1,6 +1,8 @@
 import React from "react"
 import classnames from "classnames"
 import { Link } from "gatsby"
+// import Hamburger from "hamburger-react"
+
 import HeaderNavigation from "@/template/Layout/HeaderNavigation"
 import URL from "@/mocks/urls"
 import * as styles from "./header.module.scss"
@@ -21,16 +23,14 @@ const Header = () => {
                 andrii.zalizniak
               </span> */}
 
-              <Link
-                to={URL.home}
-                className={classnames(styles.short, styles.link)}
-              >
+              <Link to={URL.home} className={classnames(styles.short)}>
                 <span>Page slogan</span>
               </Link>
             </p>
           </div>
 
           <HeaderNavigation className={"nav-----"} />
+          {/* <Hamburger /> */}
         </div>
       </div>
     </header>

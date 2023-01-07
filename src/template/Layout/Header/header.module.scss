@@ -2,7 +2,6 @@
 @import "styles/vars/_scss-variables.scss";
 
 .header {
-  margin-bottom: $gap-mob;
   padding-top: $gap-mob;
   padding-bottom: $gap-mob;
   position: fixed;
@@ -101,10 +100,10 @@
   }
 }
 
-.short {
-  // transform: scale(0.1);
-  // opacity: 0;
-}
+// .short {
+//   // transform: scale(0.1);
+//   // opacity: 0;
+// }
 
 @keyframes full {
   0% {

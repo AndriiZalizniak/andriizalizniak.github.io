@@ -1,37 +1,35 @@
-import React, { useContext, useCallback } from "react";
-import classnames from "classnames";
-import { ThemeContext } from "@/store/ThemeProvider";
-import HorizontalScroll from "react-scroll-horizontal";
-import Header from "./Header";
-import Footer from "./Footer";
-import DarkModeBtn from "@/components/ui/DarkModeBtn";
-import "@/styles/styles.scss";
+import React, { useContext, useCallback } from "react"
+import classnames from "classnames"
+import { ThemeContext } from "@/store/ThemeProvider"
+// import HorizontalScroll from "react-scroll-horizontal"
+import Header from "./Header"
+import Footer from "./Footer"
+import DarkModeBtn from "@/components/ui/DarkModeBtn"
+import "@/styles/styles.scss"
 
 const Layout = ({ children, pageClass }) => {
-  const store = useContext(ThemeContext);
+  const store = useContext(ThemeContext)
 
   const setMode = useCallback(() => {
-    store.setCurrentTheme();
-  }, [store]);
+    store.setCurrentTheme()
+  }, [store])
 
   return (
     <div
       className={classnames(pageClass, "az-page-wrapper az-general-transition")}
       // onWheel={(e) => console.log(e.pageX, e.clientX, e.screenX, e)}
     >
+      <DarkModeBtn onChange={setMode} />
       <Header />
-      <HorizontalScroll
+      {/* <HorizontalScroll
         reverseScroll={true}
         config={{ stiffness: 50, damping: 30 }}
-      >
-        <main style={{ display: "flex" }}>
-          <DarkModeBtn onChange={setMode} />
-          {children()}
-        </main>
-      </HorizontalScroll>
+      > */}
+      <main style={{ display: "flex" }}>{children()}</main>
+      {/* </HorizontalScroll> */}
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

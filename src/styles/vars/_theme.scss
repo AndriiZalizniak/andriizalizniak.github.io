@@ -1,6 +1,7 @@
 :root {
-  --TEXT_COLOR: #2b3641;
-  --BACKGROUND_COLOR: #fff;
-  --BORDER_COLOR: #929eab;
-  --SOCIAL_ICON_COLOR: #223d5a;
+  --TEXT_COLOR: var(--text-color);
+  --BACKGROUND_COLOR: var(--bg-color);
+  --BORDER_COLOR: var(--border-color);
+  --SOCIAL_ICON_COLOR: var(--social-icon-color);
+  --MOD_SWITCHER_ICON_COLOR: var(--mod-switcher-icon-color);
 }

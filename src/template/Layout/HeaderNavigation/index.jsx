@@ -14,7 +14,7 @@ const Navigation = props => {
               <Link
                 to={navItem.href}
                 activeClassName={classnames(styles.linkActive)}
-                className={classnames(styles.link)}
+                // className={classnames(styles.link)}
               >
                 {navItem.title}
               </Link>

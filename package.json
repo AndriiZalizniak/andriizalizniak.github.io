@@ -7,31 +7,25 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "dev": "gatsby clean & gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@fontsource/josefin-sans": "^4.5.9",
-    "classnames": "^2.3.1",
-    "gatsby": "^4.16.0",
-    "gatsby-cli": "^4.16.0",
-    "gatsby-plugin-root-import": "^2.0.8",
-    "gatsby-plugin-sass": "^5.16.0",
-    "gsap": "^3.10.4",
-    "react": "^18.1.0",
+    "@fontsource/josefin-sans": "^4.5.11",
+    "@heroicons/react": "^2.0.13",
+    "classnames": "^2.3.2",
+    "gatsby": "^5.3.3",
+    "gatsby-plugin-root-import": "^2.0.9",
+    "gatsby-plugin-sass": "^6.3.1",
+    "gsap": "^3.11.4",
+    "react": "^18.2.0",
     "react-css-modules": "^4.7.11",
-    "react-dom": "^18.1.0",
-    "react-scroll-horizontal": "^1.6.6",
-    "react-spring": "^9.4.5",
-    "sass": "^1.52.3",
-    "sass-loader": "^13.0.0"
-  },
-  "devDependencies": {
-    "prettier": "2.6.2"
+    "react-dom": "^18.2.0",
+    "react-spring": "^9.6.1",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0"
   },
   "repository": {
     "type": "git",

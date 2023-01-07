@@ -1,37 +1,41 @@
-import React, { useEffect, useRef } from "react";
-import classnames from "classnames";
-import { gsap } from "gsap/all";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import React, { useEffect, useRef } from "react"
+import classnames from "classnames"
+import { gsap } from "gsap/all"
+import ScrollTrigger from "gsap/ScrollTrigger"
 
-import Circles from "./components/Circles";
+import windowAvailable from "@/helpers/windowAvailable"
 
-import * as styles from "./styles.module.scss";
+// import Circles from "./components/Circles"
+
+import * as styles from "./styles.module.scss"
 
 const Solution = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const sec = useRef(null);
+  gsap.registerPlugin(ScrollTrigger)
+  const sec = useRef(null)
+
+  const isWindowAvailable = windowAvailable()
 
   useEffect(() => {
-    const element = sec.current;
+    const element = sec.current
 
     // console.log(element);
 
     gsap.to(element, {
       xPercent: -100,
-      x: () => window.innerWidth,
+      x: () => (isWindowAvailable ? window.innerWidth : null),
       ease: "none",
       scrollTrigger: {
         trigger: element,
         start: "top top",
-        end: () => window.innerWidth * 2,
+        end: () => (isWindowAvailable ? window.innerWidth * 2 : null),
         scrub: 1,
         pin: true,
         invalidateOnRefresh: true,
         anticipatePin: 1,
         // markers: true,
       },
-    });
-  }, []);
+    })
+  }, [isWindowAvailable])
 
   return (
     <div id="hero_sec" className={classnames(styles.section)} ref={sec}>
@@ -72,11 +76,11 @@ const Solution = () => {
         eaque repellendus, rem, quia iusto nobis!
       </p>
 
-      <div className={styles.wrapContainer}>
+      {/* <div className={styles.wrapContainer}>
         <Circles />
-      </div>
+      </div> */}
     </div>
-  );
-};
+  )
+}
 
-export default Solution;
+export default Solution

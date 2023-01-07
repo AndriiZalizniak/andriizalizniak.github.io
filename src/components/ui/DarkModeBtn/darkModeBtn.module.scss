@@ -1,4 +1,32 @@
+@import "styles/general/mixins.scss";
+@import "styles/vars/_scss-variables.scss";
+
 .btn {
-  border: 1px solid;
-  color: var(--white);
+  position: absolute;
+  z-index: 2;
+
+  @include media(">large") {
+    top: calc((($header-h-desk + $gap-mob * 2) / 2) - (24px / 2));
+    left: $gap-desk;
+  }
+
+  @include media(">tiny", "<=large") {
+    top: calc((($header-h-tabl + $gap-mob * 2) / 2) - (24px / 2));
+    left: $gap-tabl;
+  }
+
+  @include media("<=tiny") {
+    top: calc((($header-h-mob + $gap-mob * 2) / 2) - (24px / 2));
+    left: $gap-mob;
+  }
+}
+
+.icon {
+  color: var(--MOD_SWITCHER_ICON_COLOR);
+}
+
+.btn,
+.icon {
+  width: 24px;
+  height: 24px;
 }
